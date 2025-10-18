@@ -1,0 +1,419 @@
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+}
+
+/* Header */
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right i {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+#menu {
+  background-color: #0ea5e9;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a,
+.dropdown-toggle {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+.dropdown-toggle:hover {
+  background-color: #38bdf8;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0ea5e9;
+  min-width: 200px;
+  z-index: 1000;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.sub-toggle {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nested-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #38bdf8;
+  padding: 10px;
+  border-radius: 6px;
+  min-width: 180px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+}
+
+.nested-menu.show {
+  display: block;
+}
+
+.sub-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.sub-toggle.active i {
+  transform: rotate(90deg);
+}
+
+.nested-menu li {
+  padding: 5px 0;
+}
+
+.nested-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nested-menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Courses Section */
+#courses {
+  padding: 30px 20px;
+}
+
+.course {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.catCourse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.coursedetail {
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(24.333% - 16px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coursedetail img {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.coursedetail p {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.coursedetail a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.coursedetail a:hover {
+  text-decoration: underline;
+}
+
+/* Swiper */
+.swiper-slide img {
+  width: 100vw;
+  height: 70vh;
+  /* object-fit: cover; */
+}
+
+/* Title */
+#title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.box1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.box1, .box2 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex: 1 1 45%;
+}
+
+.box1 h3, .box2 h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.box1 p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+/* Form */
+form b {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+}
+
+.box2 input[type="text"],
+.box2 input[type="email"],
+.box2 textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.box2 input[type="text"]:focus,
+.box2 input[type="email"]:focus,
+textarea:focus {
+  border-color: #0ea5e9;
+  outline: none;
+}
+
+.box2 input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0284c7;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+footer .tagline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .catCourse {
+    flex-direction: column;
+  }
+
+  .coursedetail {
+    width: 90%;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  .box1, .box2 {
+    flex: 1 1 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+#cbtn{
+  color: white;
+  background-color:#0ea5e9;
+  border: none;
+  font-size: 16px;
+}
+
+#contactbtn{
+  color: white;
+  font-weight: bold;
+}
+
+#popup{
+  width: 60vw;
+  height: 50vh;
+  margin-left: 17vw;
+  position: fixed;
+  top: 20px;
+  z-index: 2000;
+  margin-top: -100vh;
+  transition: all 0.5s;
+
+}
+#popup .contactbox{
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.658);
+  background-color: #0ea5e9;
+
+}
+#popup .contactbox input[type="submit"]{
+  background-color: rgb(13, 145, 13);
+}
+
+#closebtn{
+  display: flex;
+  justify-content: flex-end;
+}
+#closebtn button{
+  border: none;
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+#closebtn button:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+#popup .container{
+  display: flex;
+  justify-content: space-between;
+}
+#popup .container .one{
+  width: 30vw;
+}
+
+#popup .container .two{
+  width: 28vw;
+  padding: 5px;
+}
+#popup .container .two input[type="text"],
+#popup .container .two input[type="email"],
+#popup .container .two select{
+  width: 80%;
+  border: none;
+  height: 25px;
+  outline: none;
+}
+#popup .container .two input[type="submit"]{
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 5px;
+  width: 100px;
+  color: white;
+}
+#popup .container .one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe{
+  width: 95vw;
+  height: 70vh;
+}
+.coursedetail{
+  cursor: pointer;
+}

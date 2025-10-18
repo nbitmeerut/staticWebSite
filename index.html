@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nav Bharat Computer Education</title>
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">Welcome to Nav Bharat Computer Education</div>
+    <div class="header-right">
+      <a href="https://www.facebook.com/profile.php?id=61582642071705" target="_blank" rel="noopener" style="color:#1877F2; text-decoration: none; font-size: 24px;">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+      <a href="https://www.instagram.com/nav_bharat_computer_education" target="_blank" rel="noopener" style="color: #E4405F; text-decoration: none; font-size: 24px;">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+      <a href="https://wa.me/919837991954?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20courses" 
+   target="_blank" 
+   rel="noopener" 
+   style="color:#25D366; text-decoration:none; font-size:24px;">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+  <i class="fa-brands fa-twitter"></i>
+    </div>
+  
+  </header>
+
+  <!-- Navigation Menu -->
+  <div id="menu">
+    <img src="images/logo.png">
+    <nav>
+      <ul>
+        <li id="home"><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li id="about"><a><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li class="dropdown">
+          <button class="dropdown-toggle" id="cbtn"><i class="fa-solid fa-book"></i> Courses <i class="fa-solid fa-angle-down"></i></button>
+          <ul class="submenu" id="dropdown"></ul>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-bolt"></i> Our Services</a></li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></li>
+        <li id="contactbtn"><a>Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Swiper Slider -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/slider1.png" alt="Slide 1" /></div>
+      <div class="swiper-slide"><img src="images/slider2.png" alt="Slide 2" /></div>
+      <div class="swiper-slide"><img src="images/slicer3.png" alt="Slide 3" /></div>
+      <div class="swiper-slide"><img src="images/slider4.png" alt="Slide 3" /></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  
+
+
+  <!-- Courses Section -->
+  
+  <div id="courses"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logoarea">
+      <img src="images/logo.png" alt="Nav Bharat Logo" />
+    </div>
+    <div class="tagline">
+      <div class="box">
+        <h2>Trending Certification Courses</h2>
+        <h3>Our Courses</h3>
+        <ul>
+          <li><a href="#">Tally</a></li>
+          <li><a href="#">C</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Full Stack Web Development</a></li>
+          <li><a href="#">Software Development</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Other Courses</h2>
+        <ul>
+          <li><a href="#">Auto CAD</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Office Automation</a></li>
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">DTP</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61582642071705" target="_blank" rel="noopener" style="color:#1877F2; font-size:24px;">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+         <a href="https://www.instagram.com/nav_bharat_computer_education" target="_blank" rel="noopener" style="color: #E4405F; text-decoration: none; font-size: 24px;">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+         <a href="https://wa.me/919837991954?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20courses" 
+   target="_blank" 
+   rel="noopener" 
+   style="color:#25D366; text-decoration:none; font-size:24px;">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section id="popup">
+    <div class="contactbox">
+      <div class="container">
+        <div class="one">
+          <!-- Fuel your future with digital skills -->
+          <img src="images/poster.png" style="width: 100%; height: 100%;">
+        </div>
+        
+        <div class="two">
+          <div id="closebtn">
+            <button type="button" id="closepopup">&times;</button>
+          </div>
+          <h3>Quick Contact</h3>
+            <form action="http://formsubmit.co/rastogihimanshu.pcc@gmail.com" method="POST">
+              <b>Name</b>
+              <input type="text" name="name" placeholder="Name">
+              <b>Email</b>
+              <input type="email" name="email" placeholder="Email">
+              <b>Mobile No.</b>
+              <input type="text" name="mobileNo" placeholder="Mobile No."><br>
+              <b>Course Name</b>
+              <select id="courseList">
+                <option selected disabled hidden>-- Choose Any --</option>
+              </select>
+              <br>
+              <input type="submit">
+    
+            </form>
+          </div>
+      </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Custom Scripts -->
+  <script src="script/courses.js"></script>
+  <script src="script/myscript.js"></script>
+  <script>
+    window.onload = displayCourseToHome;
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
